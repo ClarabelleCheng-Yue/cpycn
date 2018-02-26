@@ -1,20 +1,26 @@
 import React, { Component } from 'react';
-import NavBar from './components/NavBar';
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
+
+import NavBar from "./components/NavBar";
+import About from "./components/About";
+import Products from "./components/Products";
+import Careers from "./components/Careers";
+import Contact from "./components/Contact";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <NavBar />
-        {
-          // temp page here
-        }
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={About} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/products" component={Products} />
+            <Route exact path="/careers" component={Careers} />
+            <Route exact path="/contact" component={Contact} />
+          </Switch>
+        </BrowserRouter>
       </div>
     );
   }
