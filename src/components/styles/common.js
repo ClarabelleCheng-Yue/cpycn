@@ -1,7 +1,16 @@
 import styled from "styled-components";
 
-export const NavBarStyle = styled.ul `
+export const CenteredEl = styled.div `
+  position: relative;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+`;
+
+export const NavBarList = styled.ul `
+  position: relative;
   list-style-type: none;
+
   li {
     position: relative;
     display: inline-block;

@@ -10,17 +10,15 @@ import Contact from "./Contact";
 export default class NavBar extends Component {
   render() {
     return (
-      <div>
-        <BrowserRouter>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/products" component={Products} />
-            <Route exact path="/careers" component={Careers} />
-            <Route exact path="/contact" component={Contact} />
-          </Switch>
-        </BrowserRouter>
-      </ div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/products" component={Products} />
+          <Route exact path="/careers" component={Careers} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
+      </BrowserRouter>
     );
   }
 }
