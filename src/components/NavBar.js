@@ -4,14 +4,16 @@ import About from "./About";
 import Products from "./Products";
 import Careers from "./Careers";
 import Contact from "./Contact";
-import { NavBarList, Centered, Logo, LogoTitle } from "./styles/navbar";
+import { NavBarList, Centered, Logo, LogoTitle, LogoWrapper } from "./styles/navbar";
 
 export default class NavBar extends Component {
   render() {
     return (
       <Centered>
-        <Logo />
-        <LogoTitle>CerPhy</LogoTitle>
+        <LogoWrapper>
+          <Logo />
+          <LogoTitle>CerPhy</LogoTitle>
+        </LogoWrapper>
         <NavBarList>
           <li>
             <Link to="/about">ABOUT</Link>

@@ -3,23 +3,23 @@ import styled from "styled-components";
 export const Centered = styled.div `
   position: relative;
   display: inline-block;
-  width: 100%;
-  left: 50%;
-  transform: translate(-50%);
+  left: 50vw;
+  transform: translate(-50vw);
 `;
 
 export const NavBarList = styled.ul `
-  position: absolute;
+  position: relative;
   list-style-type: none;
-  padding: 0rem 0rem 0rem 1.5rem;
+  padding: 0vw 0vw 0vw 3vw;
   display: inline-block;
-  top: 1rem;
-  left: 17rem;
+  left: 4vw;
+
   li {
     position: relative;
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: 5vw;
     overflow: visible;
+    font-size: 2vw;
 
     a {
       text-decoration: none;
@@ -43,17 +43,27 @@ export const Logo = styled.div `
   position: relative;
   display: inline-block;
   background-image: url('../../assets/Cerphy_logo.jpeg');
-  background-size: cover;
   background-repeat: no-repeat;
-  width: 4.5rem;
-  height: 3rem;
+  background-position: bottom;
+  background-size: contain;
+  width: 12vw;
+  height: 11vh;
+  top: 1vh;
 `;
 
 export const LogoTitle = styled.div `
-  position: absolute;
+  position: relative;
   display: inline-block;
-  bottom: -0.4rem;
-  left: 5rem;
-  font-size: 3.5em;
+  font-size: 6vw;
   font-style: italic;
 `;
+
+export const LogoWrapper = styled.div `
+  position: relative;
+  left: 2vw;
+  top: 0vh;
+  width: auto;
+  display: inline-block;
+  align-content: center;
+`;
+
