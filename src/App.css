@@ -1,8 +1,8 @@
 .App {
   text-align: left;
   position: relative;
-  margin-left: 3rem;
-  top: 3rem;
+  top: 2rem;
+  overflow: scroll;
 }
 
 .App-logo {

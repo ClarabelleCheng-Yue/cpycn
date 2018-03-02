@@ -2,35 +2,36 @@ import styled from "styled-components";
 
 export const Centered = styled.div `
   position: relative;
-  display: inline-block;
-  left: 50vw;
-  transform: translate(-50vw);
+  display: block;
+  width: 100%;
+  height: 6rem;
+  background-color: black;
+  padding: 0vw 0vw 1.5rem 1.5rem;
 `;
 
 export const NavBarList = styled.ul `
-  position: relative;
+  position: fixed;
   list-style-type: none;
-  padding: 0vw 0vw 0vw 3vw;
   display: inline-block;
-  left: 4vw;
-
+  left: 25rem;
+  top: 5rem;
   li {
     position: relative;
     display: inline-block;
-    margin-right: 5vw;
+    margin-right: 5rem;
     overflow: visible;
-    font-size: 2vw;
+    font-size: 1rem;
 
     a {
       text-decoration: none;
     }
 
     a:link {
-      color: black;
+      color: white;
     }
 
     a:visited {
-      color: black;
+      color: white;
     }
 
     a:hover {
@@ -46,24 +47,28 @@ export const Logo = styled.div `
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-  width: 12vw;
-  height: 11vh;
-  top: 1vh;
+  width: 5rem;
+  height: 5rem;
+  top: 0.5rem;
 `;
 
 export const LogoTitle = styled.div `
   position: relative;
   display: inline-block;
-  font-size: 6vw;
+  font-size: 3.1rem;
   font-style: italic;
+  margin-left: 0.5rem;
 `;
 
 export const LogoWrapper = styled.div `
   position: relative;
-  left: 2vw;
-  top: 0vh;
+  left: 2rem;
+  top: 0rem;
   width: auto;
   display: inline-block;
-  align-content: center;
+  color: white;
 `;
 
+export const Container = styled.div `
+  position: relative;
+`;
