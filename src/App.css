@@ -2,7 +2,10 @@
   text-align: left;
   position: relative;
   top: 2rem;
-  overflow: scroll;
+  height: 1080px;
+  width: 1200px;
+  overflow-x: scroll;
+  overflow-y: scroll;
 }
 
 .App-logo {

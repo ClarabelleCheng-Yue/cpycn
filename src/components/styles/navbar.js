@@ -10,17 +10,19 @@ export const Centered = styled.div `
 `;
 
 export const NavBarList = styled.ul `
-  position: fixed;
+  position: absolute;
   list-style-type: none;
   display: inline-block;
   left: 25rem;
-  top: 5rem;
+  top: 3.1rem;
+  white-space: nowrap;
+
   li {
     position: relative;
-    display: inline-block;
-    margin-right: 5rem;
-    overflow: visible;
+    display: inline;
+    padding-right: 6rem;
     font-size: 1rem;
+    overflow: visible;
 
     a {
       text-decoration: none;
