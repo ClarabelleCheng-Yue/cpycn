@@ -1,28 +1,71 @@
 import styled from "styled-components";
 
-export const Centered = styled.div `
+export const Centered = styled.div`
   position: relative;
   display: block;
-  width: 100%;
-  height: 6rem;
-  background-color: black;
-  padding: 0vw 0vw 1.5rem 1.5rem;
+  width: ${ window.innerWidth}px;
 `;
 
-export const NavBarList = styled.ul `
-  position: absolute;
-  list-style-type: none;
+export const Container = styled.div`
+  position: relative;
+  left: 0rem;
+  height: 17rem;
+  width: ${ window.innerWidth }px;
+`;
+
+export const Logo = styled.div`
+  position: relative;
   display: inline-block;
-  left: 25rem;
-  top: 3.1rem;
+  background-image: url('../../assets/logos/Cerphy_logo2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 15rem;
+  height: 15rem;
+  left: 2rem;
+  top: -14rem;
+`;
+
+export const NavContainer = styled.div`
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 75%;
+`;
+
+export const NavListBackground = styled.div`
+  position: relative;
+  display: inline-block;
+  border-left: 15rem solid transparent;
+  border-bottom: 17rem solid black;
+  border-top: 0rem solid transparent;
+  z-index: -1;
+  width: 100%;
+  height: 10rem;
+  top: -10rem;
+`;
+
+export const NavBarList = styled.ul`
+  position: relative;
+  margin: 0rem;
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: row;
+  left: 20%;
+  top: -18rem;
   white-space: nowrap;
+  width: 53rem;
 
   li {
     position: relative;
     display: inline;
-    padding-right: 6rem;
-    font-size: 1rem;
+    padding-right: 11rem;
+    font-size: 2rem;
     overflow: visible;
+    font-family: Times New Roman;
+    font-style: italic;
+    font-weight: bold;
+    top: 45%;
 
     a {
       text-decoration: none;
@@ -42,35 +85,32 @@ export const NavBarList = styled.ul `
   }
 `;
 
-export const Logo = styled.div `
+export const YellowBr = styled.div `
   position: relative;
-  display: inline-block;
-  background-image: url('../../assets/Cerphy_logo.jpeg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-  width: 5rem;
-  height: 5rem;
-  top: 0.5rem;
+  width: ${ window.innerWidth }px;
+  height: 7rem;
+  background-color: #FFDF32;
+  z-index: -10;
+  top: -3rem;
 `;
 
-export const LogoTitle = styled.div `
+
+
+
+export const LogoTitle = styled.div`
   position: relative;
-  display: inline-block;
+  display: inline;
   font-size: 3.1rem;
   font-style: italic;
   margin-left: 0.5rem;
+  top: -3.25rem;
 `;
 
-export const LogoWrapper = styled.div `
+export const LogoWrapper = styled.div`
   position: relative;
   left: 2rem;
-  top: 0rem;
-  width: auto;
-  display: inline-block;
+  top: -1.9rem;
+  display: inline;
   color: white;
-`;
-
-export const Container = styled.div `
-  position: relative;
+  width: 100%;
 `;

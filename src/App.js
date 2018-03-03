@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import './App.css';
+import styled from 'styled-components';
+import Background from './components/Background';
 
 import NavBar from "./components/NavBar";
 import About from "./components/About";
@@ -8,10 +9,20 @@ import Products from "./components/Products";
 import Careers from "./components/Careers";
 import Contact from "./components/Contact";
 
+const AppContainer = styled.div `
+  text-align: left;
+  position: relative;
+  width: ${window.innerWidth}px;
+  height: ${ window.innerHeight }px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+`;
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <AppContainer>
+      <Background>
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={About} />
@@ -21,7 +32,8 @@ class App extends Component {
             <Route exact path="/contact" component={Contact} />
           </Switch>
         </BrowserRouter>
-      </div>
+        </Background>
+      </AppContainer>
     );
   }
 }

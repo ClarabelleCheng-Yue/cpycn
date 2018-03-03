@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const FancyBackground = styled.div `
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: ${ window.innerWidth }px;
+  display: inline-block;
+  background-image: url(${(props) => props.bgImg});
+  height: ${ window.innerHeight }px;
+  z-index: -10;
 `;
 
 export default class Background extends Component {
   render() {
+    console.log('props of backgroun: ', this.props);
     return (
-      <FancyBackground>
+      <FancyBackground bgImg={this.props.bgImg}>
       { 
         this.props.children 
       }

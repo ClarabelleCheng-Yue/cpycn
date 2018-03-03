@@ -6,7 +6,8 @@ export default class Product extends Component {
     return (
       <div>
         <NavBar />
-        <div>
+        <div style={{ backgroundImage: "url('../assets/test2.png')",
+      backgroundRepeat: "no-repeat", width: '1000px', height: '500px', backgroundSize: 'contain' }}>
           <p>
             Product
           </p>
