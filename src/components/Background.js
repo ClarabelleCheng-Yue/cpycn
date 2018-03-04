@@ -8,7 +8,7 @@ const FancyBackground = styled.div `
   width: 1920px;
   height: 1200px;
   z-index: -20;
-  top: 0rem;
+  top: 3rem;
   opacity: 0.5;
 `;
 

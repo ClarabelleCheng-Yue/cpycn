@@ -10,7 +10,7 @@ export default class NavBar extends Component {
   render() {
     return (
       <Centered>
-        <Container style={{backgroundColor: "white"}}>
+        <Container>
           <Logo />
           <NavContainer>
             <NavListBackground />

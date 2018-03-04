@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Background from './components/Background';
 
+import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Products from "./components/Products";
@@ -25,7 +26,7 @@ class App extends Component {
       <AppContainer>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={About} />
+            <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
             <Route exact path="/products" component={Products} />
             <Route exact path="/careers" component={Careers} />
