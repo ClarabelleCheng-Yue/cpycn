@@ -22,8 +22,8 @@ export const Logo = styled.div`
   background-size: contain;
   width: 15rem;
   height: 15rem;
-  left: 2rem;
-  top: -14rem;
+  left: 2.2rem;
+  top: -15.5rem;
 `;
 
 export const NavContainer = styled.div`
@@ -31,6 +31,7 @@ export const NavContainer = styled.div`
   display: inline-block;
   height: 100%;
   width: 75%;
+  z-index: 10;
 `;
 
 export const NavListBackground = styled.div`
@@ -55,14 +56,15 @@ export const NavBarList = styled.ul`
   top: -18rem;
   white-space: nowrap;
   width: 53rem;
+  z-index: 10;
 
   li {
+    cursor: pointer;
     position: relative;
     display: inline;
     padding-right: 11rem;
     font-size: 2rem;
     overflow: visible;
-    font-family: Times New Roman;
     font-style: italic;
     font-weight: bold;
     top: 45%;
@@ -90,8 +92,8 @@ export const YellowBr = styled.div `
   width: ${ window.innerWidth }px;
   height: 7rem;
   background-color: #FFDF32;
-  z-index: -10;
-  top: -3rem;
+  z-index: 5;
+  top: -4rem;
 `;
 
 
@@ -107,10 +109,9 @@ export const LogoTitle = styled.div`
 `;
 
 export const LogoWrapper = styled.div`
-  position: relative;
-  left: 2rem;
-  top: -1.9rem;
+  position: absolute;
   display: inline;
-  color: white;
-  width: 100%;
+  width: 10rem;
+  height: auto;
+  background-color: white;
 `;

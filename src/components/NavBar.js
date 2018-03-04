@@ -4,13 +4,13 @@ import About from "./About";
 import Products from "./Products";
 import Careers from "./Careers";
 import Contact from "./Contact";
-import { NavBarList, Centered, Container, Logo, NavListBackground, NavContainer, YellowBr } from "./styles/navbar";
+import { NavBarList, Centered, Container, Logo, NavListBackground, NavContainer, YellowBr, LogoWrapper } from "./styles/navbar";
 
 export default class NavBar extends Component {
   render() {
     return (
       <Centered>
-        <Container>
+        <Container style={{backgroundColor: "white"}}>
           <Logo />
           <NavContainer>
             <NavListBackground />

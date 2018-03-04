@@ -16,13 +16,13 @@ const AppContainer = styled.div `
   height: ${ window.innerHeight }px;
   overflow-x: scroll;
   overflow-y: scroll;
+  font-family: Times New Roman;
 `;
 
 class App extends Component {
   render() {
     return (
       <AppContainer>
-      <Background>
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={About} />
@@ -32,7 +32,6 @@ class App extends Component {
             <Route exact path="/contact" component={Contact} />
           </Switch>
         </BrowserRouter>
-        </Background>
       </AppContainer>
     );
   }

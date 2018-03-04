@@ -6,7 +6,7 @@ import Background from './Background';
 export default class About extends Component {
   render() {
     return (
-      <Background bgImg={'../assets/planes/plane_wlogo.png'}>
+      <div>
         <NavBar />
         <CenteredBody>
           <Points>
@@ -18,7 +18,8 @@ export default class About extends Component {
           </p>
           </Points>
         </CenteredBody>
-      </Background>
+        <Background bgImg={'../assets/planes/plane_wlogo.png'} />
+      </div>
     );
   }
 }
