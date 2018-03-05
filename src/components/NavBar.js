@@ -35,7 +35,3 @@ export default class NavBar extends Component {
     );
   }
 }
-
-/**
- * <LogoTitle>CerPhy</LogoTitle>
- */
