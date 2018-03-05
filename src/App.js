@@ -33,6 +33,7 @@ class App extends Component {
             <Route exact path="/contact" component={Contact} />
           </Switch>
         </BrowserRouter>
+        <Background bgImg={'../assets/processor.png'} />
       </AppContainer>
     );
   }

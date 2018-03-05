@@ -16,7 +16,6 @@ export default class Home extends Component {
             </div>
           </Points>
         </CenteredBody>
-        <Background bgImg={'../assets/processor.png'} />
       </div>
     );
   }

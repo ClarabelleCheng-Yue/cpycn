@@ -11,7 +11,7 @@ export default class NavBar extends Component {
     return (
       <Centered>
         <Container>
-          <Logo />
+          <Link to="/"><Logo /></Link>
           <NavContainer>
             <NavListBackground />
             <NavBarList>
