@@ -10,8 +10,8 @@ export default class NavBar extends Component {
   render() {
     return (
       <Centered>
-        <Container style={{backgroundColor: "white"}}>
-          <Logo />
+        <Container>
+          <Link to="/"><Logo /></Link>
           <NavContainer>
             <NavListBackground />
             <NavBarList>
@@ -35,7 +35,3 @@ export default class NavBar extends Component {
     );
   }
 }
-
-/**
- * <LogoTitle>CerPhy</LogoTitle>
- */

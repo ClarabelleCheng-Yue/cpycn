@@ -11,6 +11,7 @@ export const Container = styled.div`
   left: 0rem;
   height: 17rem;
   width: ${ window.innerWidth }px;
+  background-color: white;
 `;
 
 export const Logo = styled.div`
