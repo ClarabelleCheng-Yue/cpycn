@@ -5,8 +5,9 @@ const FancyBackground = styled.div `
   position: absolute;
   display: inline-block;
   background-image: url(${props => props.bgImg});
-  width: 1920px;
-  height: 1200px;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
   z-index: -20;
   top: 15rem;
   opacity: 0.5;
