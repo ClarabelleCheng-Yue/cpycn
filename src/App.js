@@ -51,16 +51,18 @@ class App extends Component {
 
   render() {
     console.log('lang: ', this.state);
+    const lang = this.state.lang;
+
     return (
       <AppContainer>
         <LanguageSwitch changeLang={this.changeLang.bind(this)} lang={this.state.lang} />
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/products" component={Products} />
-            <Route exact path="/careers" component={Careers} />
-            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/" component={props => <Home {...props} lang={lang}/>} />
+            <Route exact path="/about" component={props => <About {...props} lang={lang}/>} />
+            <Route exact path="/products" component={props => <Products {...props} lang={lang}/>} />
+            <Route exact path="/careers" component={props => <Careers {...props} lang={lang}/>} />
+            <Route exact path="/contact" component={props => <Contact {...props} lang={lang}/>} />
           </Switch>
         </BrowserRouter>
         <Background bgImg={'../assets/processor.png'} />
