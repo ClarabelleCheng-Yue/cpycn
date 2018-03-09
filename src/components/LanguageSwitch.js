@@ -10,6 +10,10 @@ const LangSwitch = styled.div`
   color: grey;
   left: 80%;
   z-index: 15;
+
+  button {
+    font-size: 1.5rem;
+  }
 `;
 
 export default class LanguageSwitch extends React.Component {

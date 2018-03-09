@@ -11,16 +11,27 @@ export default class Home extends Component {
         <div>Meet the expanding needs and rapid product development of customers</div>
       </div>;
     if (lang === 'chinese') {
-      translation = <div><div>中文</div></div>;
+      translation = (
+        <div>
+          <div>加速连接</div>
+          <div>满足客户不断扩大的需求和快速的产品开发</div>
+        </div>
+      );
     }
 
-    return translation;
+    return (
+      <div>
+      {
+        translation
+      }  
+      </div>
+    );
   }
 
   render() {
     return (
       <div>
-        <NavBar />
+        <NavBar {...this.props} />
         <CenteredBody>
           <Points>
             {

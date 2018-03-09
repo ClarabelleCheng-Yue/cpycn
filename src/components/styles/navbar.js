@@ -86,6 +86,10 @@ export const NavBarList = styled.ul`
       color: red;
     }
   }
+
+  li.chi {
+    font-size: 3rem;
+  }
 `;
 
 export const YellowBr = styled.div `

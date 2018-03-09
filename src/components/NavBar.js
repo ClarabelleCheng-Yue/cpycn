@@ -7,6 +7,43 @@ import Contact from "./Contact";
 import { NavBarList, Centered, Container, Logo, NavListBackground, NavContainer, YellowBr, LogoWrapper } from "./styles/navbar";
 
 export default class NavBar extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      tabs: ['/about', '/products', '/careers', '/contact']
+    }
+  }
+
+  translate(lang) {
+    let translation = (
+      <NavBarList>
+        {
+          ['ABOUT US', 'PRODUCTS', 'CAREERS', 'CONTACT'].map((tab, i) => (
+          <li>
+            <Link to={`${this.state.tabs[i]}`}>{tab}</Link>
+          </li>
+          ))
+        }
+      </NavBarList>
+    );
+    if (lang === this.props.languages.chi) {
+      translation = (
+        <NavBarList>
+        {
+          ['关于我们', '产品', '人才招聘', '联系'].map((tab, i) => (
+          <li className='chi'>
+            <Link to={`${this.state.tabs[i]}`}>{tab}</Link>
+          </li>
+          ))
+        }
+      </NavBarList>
+      );
+    }
+
+    return translation;
+  }
+
   render() {
     return (
       <Centered>
@@ -14,20 +51,9 @@ export default class NavBar extends Component {
           <Link to="/"><Logo /></Link>
           <NavContainer>
             <NavListBackground />
-            <NavBarList>
-              <li>
-                <Link to="/about">ABOUT US</Link>
-              </li>
-              <li>
-                <Link to="/products">PRODUCTS</Link>
-              </li>
-              <li>
-                <Link to="/careers">CAREERS</Link>
-              </li>
-              <li>
-                <Link to="/contact">CONTACT</Link>
-              </li>
-            </NavBarList>
+            {
+              this.translate(this.props.lang)
+            }
           </ NavContainer>
         </Container>
         <YellowBr />

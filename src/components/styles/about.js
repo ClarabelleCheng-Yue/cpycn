@@ -48,11 +48,17 @@ export const Title = styled.div`
   }
   
   .sub-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 0rem;
+    padding: 0rem;
   }
 
   .points {
     font-size: 1rem;
+  }
+
+  .points.eng {
+    font-size: 1.5rem;
   }
 
   .num {
@@ -64,6 +70,27 @@ export const Title = styled.div`
     font-size: 1.5rem;
     font-weight: 100;
     margin: 0rem;
+
+    div {
+      font-weight: bold;
+    }
+  }
+
+  ol {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0rem 0rem 1rem 3rem;
+    padding: 0rem;
+
+    div {
+      position: relative;
+      left: -2rem;
+      font-size: 2rem;
+    }
+
+    li {
+      font-size: 1.5rem;
+    }
   }
 `;
 

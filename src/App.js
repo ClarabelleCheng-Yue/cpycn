@@ -39,7 +39,11 @@ class App extends Component {
     }
 
     this.state = {
-      lang: getLanguage()
+      lang: getLanguage(),
+      languages: {
+        chi: 'chinese',
+        eng: 'english'
+      }
     }
   }
 
@@ -51,19 +55,19 @@ class App extends Component {
 
   render() {
     console.log('lang: ', this.state);
-    const lang = this.state.lang;
+    const { lang, languages } = this.state;
 
     return (
       <AppContainer>
-        <LanguageSwitch changeLang={this.changeLang.bind(this)} lang={this.state.lang} />
+        <LanguageSwitch changeLang={this.changeLang.bind(this)} lang={lang} />
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={props => <Home {...props} lang={lang}/>} />
-            <Route exact path="/about" component={props => <About {...props} lang={lang}/>} />
-            <Route exact path="/products" component={props => <Products {...props} lang={lang}/>} />
-            <Route exact path="/careers" component={props => <Careers {...props} lang={lang}/>} />
-            <Route exact path="/contact" component={props => <Contact {...props} lang={lang}/>} />
-          </Switch>
+            <Route exact path="/" component={props => <Home {...props} {...this.state} />} />
+            <Route exact path="/about" component={props => <About {...props} {...this.state} />} />
+            <Route exact path="/products" component={props => <Products {...props} {...this.state} />} />
+            <Route exact path="/careers" component={props => <Careers {...props} {...this.state} /> } />
+            <Route exact path="/contact" component={props => <Contact {...props} {...this.state} /> } />
+          </ Switch>
         </BrowserRouter>
         <Background bgImg={'../assets/processor.png'} />
       </AppContainer>
