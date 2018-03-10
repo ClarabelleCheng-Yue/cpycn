@@ -4,7 +4,6 @@ export const CenteredBody = styled.div`
   position: relative;
   display: block;
   margin: 0rem 3rem 0rem 3rem;
-  background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 40px 40px rgba(255, 255, 255, 0.5);
   padding: 2rem;
   left: 50%;
