@@ -5,14 +5,14 @@ import Background from './Background';
 
 export default class Home extends Component {
 
-  translate(lang) {
+  translate(lang, languages) {
     let translation = <div>
         <div>Accelerating connectivities</div>
         <div>Meet the expanding needs and rapid product development of customers</div>
       </div>;
-    if (lang === 'chinese') {
+    if (lang === languages.chi) {
       translation = (
-        <div>
+        <div className='chi'>
           <div>加速连接</div>
           <div>满足客户不断扩大的需求和快速的产品开发</div>
         </div>
@@ -35,7 +35,7 @@ export default class Home extends Component {
         <CenteredBody>
           <Points>
             {
-              this.translate(this.props.lang)
+              this.translate(this.props.lang, this.props.languages)
             }
           </Points>
         </CenteredBody>

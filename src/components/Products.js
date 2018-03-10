@@ -45,21 +45,21 @@ export default class Products extends Component {
     if (lang === this.props.languages.chi) {
       translation = (
         <Lists className='list'>
-          <div className='titled-list'>
+          <div className='titled-list chi'>
             <span>多千兆位连接PHY IP</span>
-            <ul>
+            <ul className='chi'>
               {
                 [
-                  'PCIE 4.0（台积电28nm',
-                  'PCIE 3.0（台积电40纳米)',
-                  '10GB以太网（台积电28nm'
+                  'PCIE 4.0（台积电28nm)',
+                  'PCIE 3.0（台积电40nm)',
+                  '10GB以太网（台积电28nm)'
                 ].map(
                   (product, i) => <li key={i}>{product}</li>
                   )
               }
             </ul>
           </div>
-          <div className='titled-list'>
+          <div className='titled-list chi'>
             <span>最终产品应用</span>
             <ul>
               {

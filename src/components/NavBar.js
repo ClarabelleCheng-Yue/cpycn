@@ -48,7 +48,7 @@ export default class NavBar extends Component {
     return (
       <Centered>
         <Container>
-          <Link to="/"><Logo /></Link>
+          <Link to="/"><Logo chi={this.props.lang === this.props.languages.chi}/></Link>
           <NavContainer>
             <NavListBackground />
             {

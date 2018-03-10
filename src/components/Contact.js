@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import NavBar from './NavBar';
-import { CenteredBody, Title, TextBody } from './styles/about';
+import { CenteredBody, Title, TextBody, bolder } from './styles/about';
 
 export default class Contact extends Component {
 
-  translate(lang) {
+  translate(lang, languages) {
     let translation = (
       <Title>
         Contact
@@ -18,7 +18,7 @@ export default class Contact extends Component {
         </div>
       </Title>
     );
-    if (lang === 'chinese') {
+    if (lang === languages.chi) {
       translation = (
         <Title>
           <div style={{ position: 'relative', display: 'block', fontSize: '3rem' }}>联系</div>
@@ -39,7 +39,7 @@ export default class Contact extends Component {
               padding: '0rem',
               fontSize: '2rem',
               left: '1rem'
-            }}>中国四川省成都市高新区益州大道中段1800号 G1栋1407室 <br />邮编:610041</div>
+            }}><span style={{fontWeight: 500}}>中国四川省成都市高新区益州大道中段</span>1800<span style={{fontWeight: 500}}>号 </span>G1<span style={{fontWeight: 500}}>栋</span>1407<span style={{fontWeight: 500}}>室 <br />邮编:</span>610041</div>
           </div>
           <div style={{fontSize: '2rem'}}>
             <span style={{
@@ -60,7 +60,7 @@ export default class Contact extends Component {
       <div>
         <NavBar {...this.props} />
         {
-          this.translate(this.props.lang)
+          this.translate(this.props.lang, this.props.languages)
         }
       </div>
     );

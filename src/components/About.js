@@ -57,17 +57,20 @@ export default class About extends Component {
                 position: 'relative',
                 display: 'inline-block',
                 fontSize: '2.5rem',
-                padding: '0rem'
+                padding: '0rem',
+                fontWeight: '500'
               }}>地址: </div><div style={{
                 position: 'relative',
                 display: 'inline-block',
                 padding: '0rem',
-
+                fontSize: '1.75rem',
+                top: '0.75rem',
+                left: '1rem'
               }}>中国四川省成都市高新区益州大道中段1800号 G1栋1407室 <br />邮编:610041</div>
             </div>
           </Title>
           <Title>概观</Title>
-          <TextBody>
+          <TextBody chi={true}>
             上飞科技的创始人在模拟和混合信号IC设计和产品开发领域拥有结合60多年在美国的丰
           富经验，专长于低功耗和高速收发器产品。 他们花了4年时间利用自己的资金研究高速，
           低功耗背板收发器, 串解串(SerDes) 知识产权(IP)技术。 他们想出了一个创新的架构，

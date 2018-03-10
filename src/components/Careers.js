@@ -50,13 +50,13 @@ export default class Careers extends Component {
         <Title>
           职业招聘
             <br />
-          <span>上飞科技焦点专注于高速低功耗的SerDes IPs和有相关的集成芯片,IC,产品开发。我们提供有竞争力的薪酬，良好的福利和股票期权给我们所有的员工和新员工。</span>
+          <span className='chi'>上飞科技焦点专注于高速低功耗的SerDes IPs和有相关的集成芯片,IC,产品开发。我们提供有竞争力的薪酬，良好的福利和股票期权给我们所有的员工和新员工。</span>
         </Title>
         <Title>
           招聘职位
             <br />
-          <span className='sub-title'> I. 模拟IC设计工程师</span>
-          <ol className='points'>
+          <span className='sub-title chi'> I. 模拟IC设计工程师</span>
+          <ol className='points chi'>
             <div>职位描述</div>
             <li>愿意移居到成都工作</li>
             <li>参与模拟IC规格制定，负责电路设计和仿真，编写电路设计文档与仿真文档.</li>
@@ -66,7 +66,7 @@ export default class Careers extends Component {
             <li>指导版图设计工程师完成模拟电路版图设计。</li>
             <li>协助测试工程师制定测试方案，完成芯片测试。</li>
           </ol>
-          <ol className='points'>
+          <ol className='points chi'>
             <div>职位要求</div>
             <li>微电子、电子工程硕士学位, 有4至5年以上在模拟和混合信号IC电路设计工作经验，优先给电子工程博士学位。</li>
             <li>熟练模拟IC设计流程EDA工具 (Cadence IC design Tools) 和VerilogA编码。</li>
@@ -74,8 +74,8 @@ export default class Careers extends Component {
             <li>有高速数据接口, PLL, 高速低功耗接收器和传送器, 等设计开发经验者优先。</li>
             <li>具有良好的英语读写能力。</li>
           </ol>
-          <span className='sub-title'> II. 版图设计工程师</span>
-          <ol className='points'>
+          <span className='sub-title chi'> II. 版图设计工程师</span>
+          <ol className='points chi'>
             <div>职责描述</div>
             <li>愿意移居到成都工作</li>
             <li>熟练掌握版图设计、验证和交付的全部流程工作，有多次成功流片的经验。</li>
@@ -86,7 +86,7 @@ export default class Careers extends Component {
             <li>认真填写版图输出数据及表格，并备份好制版数据。</li>
             <li>优先具有信息技术 (IT), 关注公司各方面的管理和处理信息，计算机，存储，网络，邮件和其他物理设备，安全和交换各种形式的电子数据.</li>
           </ol>
-          <ol className='points'>
+          <ol className='points chi'>
             <div>职位要求</div>
             <li>微电子相关专业，大专以上学历。</li>
             <li>3-4年以上版图设计经验，能独立完成整个CHIP的绘制。有深压微米: 55nm, 28nm版图设计经验者优先。</li>

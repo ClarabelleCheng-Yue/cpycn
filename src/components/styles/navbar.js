@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const Centered = styled.div`
   position: relative;
@@ -17,7 +17,7 @@ export const Container = styled.div`
 export const Logo = styled.div`
   position: relative;
   display: inline-block;
-  background-image: url('../../assets/logos/Cerphy_logo2.png');
+  background-image: url('../../assets/logos/Cerphy_logo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -25,6 +25,12 @@ export const Logo = styled.div`
   height: 15rem;
   left: 2.2rem;
   top: -15.5rem;
+
+  ${
+    props => props.chi && css`
+    background-image: url('../../assets/logos/Cerphy_logo_chi.png');
+    `
+  }
 `;
 
 export const NavContainer = styled.div`

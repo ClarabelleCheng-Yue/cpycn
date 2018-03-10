@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 export const CenteredBody = styled.div`
   position: relative;
@@ -25,6 +25,10 @@ export const Points = styled.div`
       margin-top: 1rem;
     }
   }
+
+  div.chi {
+    font-weight: 700;
+  }
 `;
 
 export const Title = styled.div`
@@ -41,6 +45,10 @@ export const Title = styled.div`
     text-align: left;
   }
 
+  span.chi {
+    font-weight: 500;
+  }
+
   div {
     padding-top: 1rem;
     font-size: 1.5rem;
@@ -53,8 +61,16 @@ export const Title = styled.div`
     padding: 0rem;
   }
 
+  .sub-title.chi {
+    font-weight: 500;
+  }
+
   .points {
     font-size: 1rem;
+  }
+
+  .points.chi {
+    font-weight: 500;
   }
 
   .points.eng {
@@ -78,7 +94,7 @@ export const Title = styled.div`
 
   ol {
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 500;
     margin: 0rem 0rem 1rem 3rem;
     padding: 0rem;
 
@@ -112,9 +128,19 @@ export const Lists = Title.extend`
       font-size: 2rem;
     }
   }
+
+  .chi {
+    * {
+      font-weight: 500;
+    }
+  }
 `;
 
 export const TextBody = styled.div`
   font-family: Verdana;
   font-size: 1.5rem;
+
+  ${props => props.chi && css`
+    font-size: 1.75rem;
+  `}
 `;
