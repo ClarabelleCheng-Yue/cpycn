@@ -2,8 +2,8 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 const LangSwitch = styled.div`
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  display: block;
   text-align: center;
   font-family: Verdana;
   font-size: 2em;
@@ -13,6 +13,12 @@ const LangSwitch = styled.div`
 
   button {
     font-size: 1.5rem;
+    margin: 0.5rem;
+    border: none;
+  }
+
+  button:hover {
+    color: red;
   }
 `;
 

@@ -34,8 +34,7 @@ class App extends Component {
       const lat = lonlat.latitude;
       const lon = lonlat.longitude;
       const inChina = lat > 15 && lat < 60 && lon > 70 && lon < 135;
-      // return inChina ? 'chinese' : 'english';
-      return 'chinese';
+      return inChina ? 'chinese' : 'english';
     }
 
     this.state = {
@@ -69,7 +68,7 @@ class App extends Component {
             <Route exact path="/contact" component={props => <Contact {...props} {...this.state} /> } />
           </ Switch>
         </BrowserRouter>
-        <Background bgImg={'../assets/processor.png'} />
+        <Background bgImg={'../assets/bg_processor.png'} />
       </AppContainer>
     );
   }

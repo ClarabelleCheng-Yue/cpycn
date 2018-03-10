@@ -10,7 +10,7 @@ const FancyBackground = styled.div `
   height: 100%;
   z-index: -20;
   top: 15rem;
-  opacity: 0.5;
+  opacity: 0.27;
 `;
 
 export default class Background extends Component {
