@@ -33,9 +33,18 @@ export const Title = styled.div`
   position: relative;
   display: block;
   font-family: Verdana;
-  font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 2rem;
+
+  .blue {
+    color: blue;
+  }
+
+  .title {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: red;
+  }
 
   span {
     font-size: 2rem;
@@ -73,6 +82,7 @@ export const Title = styled.div`
 
   .points.eng {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .num {

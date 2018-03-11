@@ -8,14 +8,14 @@ export default class Careers extends Component {
     let translation = (
       <CenteredBody>
         <Title>
-          Careers
+          <div className='title'>Careers</div>
             <br />
           <span> CerPhy focuses in high speed low power SerDes IPs and IC related product developments. We provide competitive salary, good benefits, and stock options to all our employees and new hires. </span>
         </Title>
         <Title>
-          Openings
+          <div className='title'>Openings</div>
             <br />
-          <span className='sub-title'> I. Circuit Design Position</span>
+          <span className='sub-title blue'> I. Circuit Design Position</span>
           <ul className='points eng'>
             <li>Willing relocate to work in Chengdu</li>
             <li>Require MSEE with 4 to 5 Yrs.  of work experience in Analog and Mixed signal circuit design back ground, PHDEE is preferred.</li>
@@ -26,7 +26,7 @@ export default class Careers extends Component {
             <li>Guide PCB designers, know how to perform the lab set-up and test IC designed blocks, and completely verify their performance and characterization.</li>
             <li>Serious and responsible work, good communication skills and team spirit</li>
           </ul>
-          <span className='sub-title eng'> II. Layout IC Design Position</span>
+          <span className='sub-title blue'> II. Layout IC Design Position</span>
           <ul className='points eng'>
             <li>Willing relocate to work in Chengdu</li>
             <li>Require 4 to 5 Yrs.  of Microelectronics related professional, college education.</li>
@@ -48,14 +48,14 @@ export default class Careers extends Component {
       translation = (
         <CenteredBody>
         <Title>
-          职业招聘
+          <div className='title'>职业招聘</div>
             <br />
           <span className='chi'>上飞科技焦点专注于高速低功耗的SerDes IPs和有相关的集成芯片,IC,产品开发。我们提供有竞争力的薪酬，良好的福利和股票期权给我们所有的员工和新员工。</span>
         </Title>
         <Title>
-          招聘职位
+          <div className='title'>招聘职位</div>
             <br />
-          <span className='sub-title chi'> I. 模拟IC设计工程师</span>
+          <span className='sub-title chi blue'> I. 模拟IC设计工程师</span>
           <ol className='points chi'>
             <div>职位描述</div>
             <li>愿意移居到成都工作</li>
@@ -74,7 +74,7 @@ export default class Careers extends Component {
             <li>有高速数据接口, PLL, 高速低功耗接收器和传送器, 等设计开发经验者优先。</li>
             <li>具有良好的英语读写能力。</li>
           </ol>
-          <span className='sub-title chi'> II. 版图设计工程师</span>
+          <span className='sub-title chi blue'> II. 版图设计工程师</span>
           <ol className='points chi'>
             <div>职责描述</div>
             <li>愿意移居到成都工作</li>

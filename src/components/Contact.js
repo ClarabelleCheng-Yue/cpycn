@@ -7,21 +7,29 @@ export default class Contact extends Component {
   translate(lang, languages) {
     let translation = (
       <Title>
-        Contact
+        <div className='title'>Contact</div>
         <div>
-          <span style={{fontWeight: '500'}}>Mailing Address:</span>
+          <span style={{fontWeight: '500', color: 'red'}}>Mailing Address:</span>
           <span className='sub-title' style={{ fontWeight:'normal', fontSize: '1.5rem' }}> Room 1407, Tower G1. No. 1800, Yizhou Avenue, Chengdu, Sichuan. P.R. China 610041</span>
         </div>
         <div>
-          <span style={{ fontWeight: '500' }}>Email:</span> lcheng@cerphy.com.cn<br />
-          <span style={{ fontWeight: '500' }}>Cell:</span> 13072863779 // 408-234-3758
+          <span style={{ fontWeight: '500', color: 'red' }}>
+            Email:
+          </span> lcheng@cerphy.com.cn<br />
+          <span style={{ fontWeight: '500', color: 'red' }}>
+            Cell:
+          </span> 13072863779 // 408-234-3758
         </div>
       </Title>
     );
     if (lang === languages.chi) {
       translation = (
         <Title>
-          <div style={{ position: 'relative', display: 'block', fontSize: '3rem' }}>联系</div>
+          <div style={{ 
+            position: 'relative', 
+            display: 'block', 
+            fontSize: '3rem',
+            color: 'red' }}>联系</div>
           <div style={{
             position: 'relative',
             display: 'inline-flex',
@@ -32,8 +40,10 @@ export default class Contact extends Component {
               display: 'inline-block',
               fontSize: '2rem',
               padding: '0rem',
-              fontWeight: 'bold'
-            }}><div/>地址:</div><div style={{
+              fontWeight: 'bold',
+              color: 'red'
+            }}>地址:</div>
+            <div style={{
               position: 'relative',
               display: 'inline-block',
               padding: '0rem',
@@ -43,10 +53,12 @@ export default class Contact extends Component {
           </div>
           <div style={{fontSize: '2rem'}}>
             <span style={{
-              fontWeight: 'bold'
+              fontWeight: 'bold',
+              color: 'red'
             }}>电子邮件:</span> lcheng@cerphy.com.cn<br />
             <span style={{
-              fontWeight: 'bold'
+              fontWeight: 'bold',
+              color: 'red'
             }}>手机:</span> 13072863779
           </div>
         </Title>

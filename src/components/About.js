@@ -15,13 +15,13 @@ export default class About extends Component {
     let translation = (
       <CenteredBody>
         <Title>
-          Company Name: <span> Cerphy Inc.</span>
+          <div className='title'>Company Name:</div> <span> Cerphy Inc.</span>
         </Title>
         <Title>
-          Address:
+          <div className='title'>Address:</div>
       <span> Room 1407, Tower G1. No. 1800, Yizhou Avenue, Chengdu, Sichuan. P.R. China 610041</span>
         </Title>
-        <Title>Overview</Title>
+        <Title style={{ color: 'red' }}><div className='title'>Overview</div></Title>
         <TextBody>
           {
             `CerPhy‘s founders have more than 60 years of combined experience 
@@ -45,7 +45,7 @@ export default class About extends Component {
       translation = (
         <CenteredBody>
           <Title>
-            公司名称: <span> 成都上飞奇道科技有限公司 (简称:上飞科技)</span>
+            <div className='title'>公司名称:</div> <span> 成都上飞奇道科技有限公司 (简称:上飞科技)</span>
           </Title>
           <Title>
             <div style={{
@@ -58,18 +58,23 @@ export default class About extends Component {
                 display: 'inline-block',
                 fontSize: '2.5rem',
                 padding: '0rem',
-                fontWeight: '500'
-              }}>地址: </div><div style={{
+                fontWeight: '500',
+                color: 'red'
+              }}>地址: 
+              </div>
+              <div style={{
                 position: 'relative',
                 display: 'inline-block',
                 padding: '0rem',
                 fontSize: '1.75rem',
                 top: '0.75rem',
                 left: '1rem'
-              }}>中国四川省成都市高新区益州大道中段1800号 G1栋1407室 <br />邮编:610041</div>
+              }}>
+              中国四川省成都市高新区益州大道中段1800号 G1栋1407室 <br />邮编:610041
+              </div>
             </div>
           </Title>
-          <Title>概观</Title>
+          <Title><div className='title'>概观</div></Title>
           <TextBody chi={true}>
             上飞科技的创始人在模拟和混合信号IC设计和产品开发领域拥有结合60多年在美国的丰
           富经验，专长于低功耗和高速收发器产品。 他们花了4年时间利用自己的资金研究高速，
